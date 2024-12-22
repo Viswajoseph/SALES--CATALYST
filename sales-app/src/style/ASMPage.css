@@ -1,0 +1,212 @@
+/* ASMPage.css */
+
+.asm-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: #f0f4f8;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+      
+    .asm-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #0056b3;
+    }
+      
+    .asm-section {
+      width: 100%;
+      max-width: 600px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+      
+    .asm-section h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #0056b3;
+    }
+      
+    .asm-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+      
+    .asm-button {
+      padding: 10px 20px;
+      border-radius: 4px;
+      border: none;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+      
+    .asm-report-list, .asm-sales-officer-list, .asm-bills-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+      
+    .asm-report-item, .asm-sales-officer-item, .asm-bill-item {
+      padding: 10px;
+      background-color: #f7f9fc;
+      border: 1px solid #e0e4e8;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    
+    /* Mobile Styling for Android and other smaller screens */
+    @media (max-width: 500px) {
+      .asm-container {
+        padding: 15px;
+      }
+    
+      .asm-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+    
+       .asm-section {
+        padding: 15px;
+        margin-bottom: 15px;
+        max-width: 100%; /* Ensure full width on smaller screens */
+      }
+    
+      .asm-section h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    
+      .asm-input {
+        font-size: 14px;
+        padding: 8px;
+      }
+    
+      .asm-button {
+        font-size: 14px;
+        padding: 8px 15px;
+      }
+    
+      .asm-report-item, .asm-sales-officer-item, .asm-bill-item {
+        font-size: 14px;
+        padding: 8px;
+        margin-bottom: 8px;
+      }
+    }
+    .modal-overlay {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.5);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+        
+        .modal-content {
+         background: #fff;
+         padding: 20px;
+         border-radius: 8px;
+         width: 300px;
+         text-align: center;
+        }
+        
+        .modal-content h3 {
+         margin-top: 0;
+        }
+        
+        .modal-content button {
+         margin-top: 15px;
+        }
+        .chatbot-container {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1000;
+        }
+        
+        .chatbot-toggle {
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .chatbot-window {
+          background-color: #ffffff;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          width: 300px;
+          max-height: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        
+        .chatbot-messages {
+          padding: 10px;
+          overflow-y: auto;
+          flex-grow: 1;
+        }
+        
+        .chatbot-message {
+          margin-bottom: 10px;
+          padding: 10px;
+          border-radius: 5px;
+        }
+        
+        .chatbot-user {
+          background-color: #007bff;
+          color: white;
+          align-self: flex-end;
+        }
+        
+        .chatbot-bot {
+          background-color: #f0f4f8;
+          color: black;
+          align-self: flex-start;
+        }
+        
+        .chatbot-input-container {
+          display: flex;
+          border-top: 1px solid #ddd;
+          padding: 5px;
+        }
+        
+        .chatbot-input {
+          flex-grow: 1;
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+        }
+        
+        .chatbot-send {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 5px;
+          margin-left: 5px;
+          cursor: pointer;
+        }

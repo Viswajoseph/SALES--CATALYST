@@ -1,0 +1,105 @@
+/* Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #a9c1ee, #a4c2f6);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for better readability */
+  text-align: center;
+}
+
+.login-title {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+.login-select,
+.login-input {
+  width: 80%;
+  padding: 12px 15px; /* Consistent padding for inputs */
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Combine transitions for efficiency */
+  background-color: #f9f9f9; /* Add background for input fields */
+}
+
+.login-select:focus,
+.login-input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.forgot-password-link {
+  display: block;
+  margin-top: 15px;
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.forgot-password-link:hover {
+  color: #0056b3;
+}
+
+/* Mobile Styling for Android and other smaller screens */
+@media (max-width: 500px) {
+  .login-form {
+      padding: 30px 20px;
+      max-width: 90%; /* Increase width to fit the screen on smaller devices */
+  }
+
+  .login-title {
+      font-size: 24px;
+      margin-bottom: 15px;
+  }
+
+  .login-select,
+  .login-input {
+      font-size: 14px;
+      padding: 10px;
+      margin-bottom: 12px;
+  }
+
+  .login-button {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  .forgot-password-link {
+      font-size: 12px;
+      margin-top: 10px;
+  }
+}

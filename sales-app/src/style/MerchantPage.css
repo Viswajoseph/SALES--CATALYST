@@ -1,0 +1,36 @@
+/* Global styles */
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Container styling */
+    .merchant-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      margin-left: 400px;
+      width: 400px;
+    }
+    
+    /* Mobile Styling for Android and smaller screens */
+    @media (max-width: 500px) {
+      .merchant-container {
+        margin-top: 20px; /* Reduce top margin for smaller screens */
+        padding: 15px; /* Reduce padding to save space */
+        border-radius: 5px; /* Slightly decrease the border radius for a cleaner look */
+        width: 90%; /* Set width to fit screen with a bit of margin */
+      }
+    
+      body {
+        font-size: 14px; /* Decrease the font size for better readability on small screens */
+      }
+    }
+    
